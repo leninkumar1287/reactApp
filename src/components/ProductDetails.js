@@ -3,308 +3,306 @@ import { Link } from 'react-router-dom'
 export default function ProductDetail() {
   return (
     <div><header id="header">
-    <div class="header_top">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="contactinfo">
-                        <ul class="nav nav-pills">
-                            <li><a href=""><i class="fa fa-phone"></i> +2 95 01 88 821</a></li>
-                            <li><a href=""><i class="fa fa-envelope"></i> info@domain.com</a></li>
+    <div className="header_top">
+        <div className="container">
+            <div className="row">
+                <div className="col-sm-6">
+                    <div className="contactinfo">
+                        <ul className="nav nav-pills">
+                            <li><Link to=""><i className="fa fa-phone"></i> +2 95 01 88 821</Link></li>
+                            <li><Link to=""><i className="fa fa-envelope"></i> info@domain.com</Link></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-6">
-                    <div class="social-icons pull-right">
-                        <ul class="nav navbar-nav">
-                            <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                            <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                            <li><a href=""><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href=""><i class="fa fa-dribbble"></i></a></li>
-                            <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                <div className="col-sm-6">
+                    <div className="social-icons pull-right">
+                        <ul className="nav navbar-nav">
+                            <li><Link to=""><i className="fa fa-facebook"></i></Link></li>
+                            <li><Link to=""><i className="fa fa-twitter"></i></Link></li>
+                            <li><Link to=""><i className="fa fa-linkedin"></i></Link></li>
+                            <li><Link to=""><i className="fa fa-dribbble"></i></Link></li>
+                            <li><Link to=""><i className="fa fa-google-plus"></i></Link></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </div><!--/header_top-->
+    </div>
     
-    <div class="header-middle"><!--header-middle-->
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="logo pull-left">
-                        <a href="index.html"><img src="images/home/logo.png" alt="" /></a>
+    <div className="header-middle">
+        <div className="container">
+            <div className="row">
+                <div className="col-sm-4">
+                    <div className="logo pull-left">
+                        <Link to="index.html"><img src="images/home/logo.png" alt="" /></Link>
                     </div>
-                    <div class="btn-group pull-right">
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
+                    <div className="btn-group pull-right">
+                        <div className="btn-group">
+                            <button type="button" className="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
                                 USA
-                                <span class="caret"></span>
+                                <span className="caret"></span>
                             </button>
-                            <ul class="dropdown-menu">
-                                <li><a href="">Canada</a></li>
-                                <li><a href="">UK</a></li>
+                            <ul className="dropdown-menu">
+                                <li><Link to="">Canada</Link></li>
+                                <li><Link to="">UK</Link></li>
                             </ul>
                         </div>
                         
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
+                        <div className="btn-group">
+                            <button type="button" className="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
                                 DOLLAR
-                                <span class="caret"></span>
+                                <span className="caret"></span>
                             </button>
-                            <ul class="dropdown-menu">
-                                <li><a href="">Canadian Dollar</a></li>
-                                <li><a href="">Pound</a></li>
+                            <ul className="dropdown-menu">
+                                <li><Link to="">Canadian Dollar</Link></li>
+                                <li><Link to="">Pound</Link></li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-8">
-                    <div class="shop-menu pull-right">
-                        <ul class="nav navbar-nav">
-                            <li><a href=""><i class="fa fa-user"></i> Account</a></li>
-                            <li><a href=""><i class="fa fa-star"></i> Wishlist</a></li>
-                            <li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Checkout</a></li>
-                            <li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a></li>
-                            <li><a href="login.html"><i class="fa fa-lock"></i> Login</a></li>
+                <div className="col-sm-8">
+                    <div className="shop-menu pull-right">
+                        <ul className="nav navbar-nav">
+                            <li><Link to=""><i className="fa fa-user"></i> Account</Link></li>
+                            <li><Link to=""><i className="fa fa-star"></i> Wishlist</Link></li>
+                            <li><Link to="./Checkout.js"><i className="fa fa-crosshairs"></i> Checkout</Link></li>
+                            <li><Link to="./Cart.js"><i className="fa fa-shopping-cart"></i> Cart</Link></li>
+                            <li><Link to="./Login.js"><i className="fa fa-lock"></i> Login</Link></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </div><!--/header-middle-->
+    </div>
 
-    <div class="header-bottom"><!--header-bottom-->
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-9">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
+    <div className="header-bottom">
+        <div className="container">
+            <div className="row">
+                <div className="col-sm-9">
+                    <div className="navbar-header">
+                        <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span className="sr-only">Toggle navigation</span>
+                            <span className="icon-bar"></span>
+                            <span className="icon-bar"></span>
+                            <span className="icon-bar"></span>
                         </button>
                     </div>
-                    <div class="mainmenu pull-left">
-                        <ul class="nav navbar-nav collapse navbar-collapse">
-                            <li><a href="index.html">Home</a></li>
-                            <li class="dropdown"><a href="#">Shop<i class="fa fa-angle-down"></i></a>
-                                <ul role="menu" class="sub-menu">
-                                    <li><a href="shop.html">Products</a></li>
-                                    <li><a href="product-details.html" class="active">Product Details</a></li> 
-                                    <li><a href="checkout.html">Checkout</a></li> 
-                                    <li><a href="cart.html">Cart</a></li> 
-                                    <li><a href="login.html">Login</a></li> 
+                    <div className="mainmenu pull-left">
+                        <ul className="nav navbar-nav collapse navbar-collapse">
+                            <li><Link to="index.html">Home</Link></li>
+                            <li className="dropdown"><Link to="#">Shop<i className="fa fa-angle-down"></i></Link>
+                                <ul role="menu" className="sub-menu">
+                                    <li><Link to="./Shop.js">Products</Link></li>
+                                    <li><Link to="./ProductDetails.js" className="active">Product Details</Link></li> 
+                                    <li><Link to="./Checkout.js">Checkout</Link></li> 
+                                    <li><Link to="./Cart.js">Cart</Link></li> 
+                                    <li><Link to="./Login.js">Login</Link></li> 
                                 </ul>
                             </li> 
-                            <li class="dropdown"><a href="#">Blog<i class="fa fa-angle-down"></i></a>
-                                <ul role="menu" class="sub-menu">
-                                    <li><a href="blog.html">Blog List</a></li>
-                                    <li><a href="blog-single.html">Blog Single</a></li>
-                                </ul>
+                            <li className="dropdown"><Link to="#">Blog<i className="fa fa-angle-down"></i></Link>
+                                <ul role="menu" className="sub-menu">
+                                    <li><Link to="./Blog.js">Blog List</Link></li>
+                                    <li><Link to="./Blog-single.js">Blog Single</Link></li>
+                                </ul>d
                             </li> 
-                            <li><a href="404.html">404</a></li>
-                            <li><a href="contact-us.html">Contact</a></li>
+                            <li><Link to="404.html">404</Link></li>
+                            <li><Link to="./ContactUs.js">Contact</Link></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-3">
-                    <div class="search_box pull-right">
+                <div className="col-sm-3">
+                    <div className="search_box pull-right">
                         <input type="text" placeholder="Search"/>
                     </div>
                 </div>
             </div>
         </div>
-    </div><!--/header-bottom-->
-</header><!--/header-->
+    </div>
+</header>
 
 <section>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-3">
-                <div class="left-sidebar">
+    <div className="container">
+        <div className="row">
+            <div className="col-sm-3">
+                <div className="left-sidebar">
                     <h2>Category</h2>
-                    <div class="panel-group category-products" id="accordian"><!--category-productsr-->
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordian" href="#sportswear">
-                                        <span class="badge pull-right"><i class="fa fa-plus"></i></span>
+                    <div className="panel-group category-products" id="accordian">
+                        <div className="panel panel-default">
+                            <div className="panel-heading">
+                                <h4 className="panel-title">
+                                    <Link data-toggle="collapse" data-parent="#accordian" to="#sportswear">
+                                        <span className="badge pull-right"><i className="fa fa-plus"></i></span>
                                         Sportswear
-                                    </a>
+                                    </Link>
                                 </h4>
                             </div>
-                            <div id="sportswear" class="panel-collapse collapse">
-                                <div class="panel-body">
+                            <div id="sportswear" className="panel-collapse collapse">
+                                <div className="panel-body">
                                     <ul>
-                                        <li><a href="">Nike </a></li>
-                                        <li><a href="">Under Armour </a></li>
-                                        <li><a href="">Adidas </a></li>
-                                        <li><a href="">Puma</a></li>
-                                        <li><a href="">ASICS </a></li>
+                                        <li><Link to="">Nike </Link></li>
+                                        <li><Link to="">Under Armour </Link></li>
+                                        <li><Link to="">Adidas </Link></li>
+                                        <li><Link to="">Puma</Link></li>
+                                        <li><Link to="">ASICS </Link></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordian" href="#mens">
-                                        <span class="badge pull-right"><i class="fa fa-plus"></i></span>
+                        <div className="panel panel-default">
+                            <div className="panel-heading">
+                                <h4 className="panel-title">
+                                    <Link data-toggle="collapse" data-parent="#accordian" to="#mens">
+                                        <span className="badge pull-right"><i className="fa fa-plus"></i></span>
                                         Mens
-                                    </a>
+                                    </Link>
                                 </h4>
                             </div>
-                            <div id="mens" class="panel-collapse collapse">
-                                <div class="panel-body">
+                            <div id="mens" className="panel-collapse collapse">
+                                <div className="panel-body">
                                     <ul>
-                                        <li><a href="">Fendi</a></li>
-                                        <li><a href="">Guess</a></li>
-                                        <li><a href="">Valentino</a></li>
-                                        <li><a href="">Dior</a></li>
-                                        <li><a href="">Versace</a></li>
-                                        <li><a href="">Armani</a></li>
-                                        <li><a href="">Prada</a></li>
-                                        <li><a href="">Dolce and Gabbana</a></li>
-                                        <li><a href="">Chanel</a></li>
-                                        <li><a href="">Gucci</a></li>
+                                        <li><Link to="">Fendi</Link></li>
+                                        <li><Link to="">Guess</Link></li>
+                                        <li><Link to="">Valentino</Link></li>
+                                        <li><Link to="">Dior</Link></li>
+                                        <li><Link to="">Versace</Link></li>
+                                        <li><Link to="">Armani</Link></li>
+                                        <li><Link to="">Prada</Link></li>
+                                        <li><Link to="">Dolce and Gabbana</Link></li>
+                                        <li><Link to="">Chanel</Link></li>
+                                        <li><Link to="">Gucci</Link></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordian" href="#womens">
-                                        <span class="badge pull-right"><i class="fa fa-plus"></i></span>
+                        <div className="panel panel-default">
+                            <div className="panel-heading">
+                                <h4 className="panel-title">
+                                    <Link data-toggle="collapse" data-parent="#accordian" to="#womens">
+                                        <span className="badge pull-right"><i className="fa fa-plus"></i></span>
                                         Womens
-                                    </a>
+                                    </Link>
                                 </h4>
                             </div>
-                            <div id="womens" class="panel-collapse collapse">
-                                <div class="panel-body">
+                            <div id="womens" className="panel-collapse collapse">
+                                <div className="panel-body">
                                     <ul>
-                                        <li><a href="">Fendi</a></li>
-                                        <li><a href="">Guess</a></li>
-                                        <li><a href="">Valentino</a></li>
-                                        <li><a href="">Dior</a></li>
-                                        <li><a href="">Versace</a></li>
+                                        <li><Link to="">Fendi</Link></li>
+                                        <li><Link to="">Guess</Link></li>
+                                        <li><Link to="">Valentino</Link></li>
+                                        <li><Link to="">Dior</Link></li>
+                                        <li><Link to="">Versace</Link></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title"><a href="#">Kids</a></h4>
+                        <div className="panel panel-default">
+                            <div className="panel-heading">
+                                <h4 className="panel-title"><Link to="#">Kids</Link></h4>
                             </div>
                         </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title"><a href="#">Fashion</a></h4>
+                        <div className="panel panel-default">
+                            <div className="panel-heading">
+                                <h4 className="panel-title"><Link to="#">Fashion</Link></h4>
                             </div>
                         </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title"><a href="#">Households</a></h4>
+                        <div className="panel panel-default">
+                            <div className="panel-heading">
+                                <h4 className="panel-title"><Link to="#">Households</Link></h4>
                             </div>
                         </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title"><a href="#">Interiors</a></h4>
+                        <div className="panel panel-default">
+                            <div className="panel-heading">
+                                <h4 className="panel-title"><Link to="#">Interiors</Link></h4>
                             </div>
                         </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title"><a href="#">Clothing</a></h4>
+                        <div className="panel panel-default">
+                            <div className="panel-heading">
+                                <h4 className="panel-title"><Link to="#">Clothing</Link></h4>
                             </div>
                         </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title"><a href="#">Bags</a></h4>
+                        <div className="panel panel-default">
+                            <div className="panel-heading">
+                                <h4 className="panel-title"><Link to="#">Bags</Link></h4>
                             </div>
                         </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title"><a href="#">Shoes</a></h4>
+                        <div className="panel panel-default">
+                            <div className="panel-heading">
+                                <h4 className="panel-title"><Link to="#">Shoes</Link></h4>
                             </div>
                         </div>
-                    </div><!--/category-products-->
+                    </div>
                 
-                    <div class="brands_products"><!--brands_products-->
+                    <div className="brands_products">
                         <h2>Brands</h2>
-                        <div class="brands-name">
-                            <ul class="nav nav-pills nav-stacked">
-                                <li><a href=""> <span class="pull-right">(50)</span>Acne</a></li>
-                                <li><a href=""> <span class="pull-right">(56)</span>Grüne Erde</a></li>
-                                <li><a href=""> <span class="pull-right">(27)</span>Albiro</a></li>
-                                <li><a href=""> <span class="pull-right">(32)</span>Ronhill</a></li>
-                                <li><a href=""> <span class="pull-right">(5)</span>Oddmolly</a></li>
-                                <li><a href=""> <span class="pull-right">(9)</span>Boudestijn</a></li>
-                                <li><a href=""> <span class="pull-right">(4)</span>Rösch creative culture</a></li>
+                        <div className="brands-name">
+                            <ul className="nav nav-pills nav-stacked">
+                                <li><Link to=""> <span className="pull-right">(50)</span>Acne</Link></li>
+                                <li><Link to=""> <span className="pull-right">(56)</span>Grüne Erde</Link></li>
+                                <li><Link to=""> <span className="pull-right">(27)</span>Albiro</Link></li>
+                                <li><Link to=""> <span className="pull-right">(32)</span>Ronhill</Link></li>
+                                <li><Link to=""> <span className="pull-right">(5)</span>Oddmolly</Link></li>
+                                <li><Link to=""> <span className="pull-right">(9)</span>Boudestijn</Link></li>
+                                <li><Link to=""> <span className="pull-right">(4)</span>Rösch creative culture</Link></li>
                             </ul>
                         </div>
-                    </div><!--/brands_products-->
+                    </div>
                     
-                    <div class="price-range"><!--price-range-->
+                    <div className="price-range">
                         <h2>Price Range</h2>
-                        <div class="well">
-                             <input type="text" class="span2" value="" data-slider-min="0" data-slider-max="600" data-slider-step="5" data-slider-value="[250,450]" id="sl2" ><br />
-                             <b>$ 0</b> <b class="pull-right">$ 600</b>
+                        <div className="well">
+                             <input type="text" className="span2" value="" data-slider-min="0" data-slider-max="600" data-slider-step="5" data-slider-value="[250,450]" id="sl2" /><br />
+                             <b>$ 0</b> <b className="pull-right">$ 600</b>
                         </div>
-                    </div><!--/price-range-->
+                    </div>
                     
-                    <div class="shipping text-center"><!--shipping-->
+                    <div className="shipping text-center">
                         <img src="images/home/shipping.jpg" alt="" />
-                    </div><!--/shipping-->
+                    </div>
                     
                 </div>
             </div>
             
-            <div class="col-sm-9 padding-right">
-                <div class="product-details"><!--product-details-->
-                    <div class="col-sm-5">
-                        <div class="view-product">
+            <div className="col-sm-9 padding-right">
+                <div className="product-details">
+                    <div className="col-sm-5">
+                        <div className="view-product">
                             <img src="images/product-details/1.jpg" alt="" />
                             <h3>ZOOM</h3>
                         </div>
-                        <div id="similar-product" class="carousel slide" data-ride="carousel">
-                            
-                              <!-- Wrapper for slides -->
-                                <div class="carousel-inner">
-                                    <div class="item active">
-                                      <a href=""><img src="images/product-details/similar1.jpg" alt=""></a>
-                                      <a href=""><img src="images/product-details/similar2.jpg" alt=""></a>
-                                      <a href=""><img src="images/product-details/similar3.jpg" alt=""></a>
+                        <div id="similar-product" className="carousel slide" data-ride="carousel">
+                                <div className="carousel-inner">
+                                    <div className="item active">
+                                      <Link to=""><img src="images/product-details/similar1.jpg" alt=""/></Link>
+                                      <Link to=""><img src="images/product-details/similar2.jpg" alt=""/></Link>
+                                      <Link to=""><img src="images/product-details/similar3.jpg" alt=""/></Link>
                                     </div>
-                                    <div class="item">
-                                      <a href=""><img src="images/product-details/similar1.jpg" alt=""></a>
-                                      <a href=""><img src="images/product-details/similar2.jpg" alt=""></a>
-                                      <a href=""><img src="images/product-details/similar3.jpg" alt=""></a>
+                                    <div className="item">
+                                      <Link to=""><img src="images/product-details/similar1.jpg" alt=""/></Link>
+                                      <Link to=""><img src="images/product-details/similar2.jpg" alt=""/></Link>
+                                      <Link to=""><img src="images/product-details/similar3.jpg" alt=""/></Link>
                                     </div>
-                                    <div class="item">
-                                      <a href=""><img src="images/product-details/similar1.jpg" alt=""></a>
-                                      <a href=""><img src="images/product-details/similar2.jpg" alt=""></a>
-                                      <a href=""><img src="images/product-details/similar3.jpg" alt=""></a>
+                                    <div className="item">
+                                      <Link to=""><img src="images/product-details/similar1.jpg" alt=""/></Link>
+                                      <Link to=""><img src="images/product-details/similar2.jpg" alt=""/></Link>
+                                      <Link to=""><img src="images/product-details/similar3.jpg" alt=""/></Link>
                                     </div>
                                     
                                 </div>
 
-                              <!-- Controls -->
-                              <a class="left item-control" href="#similar-product" data-slide="prev">
-                                <i class="fa fa-angle-left"></i>
-                              </a>
-                              <a class="right item-control" href="#similar-product" data-slide="next">
-                                <i class="fa fa-angle-right"></i>
-                              </a>
+                             
+                              <Link className="left item-control" to="#similar-product" data-slide="prev">
+                                <i className="fa fa-angle-left"></i>
+                              </Link>
+                              <Link className="right item-control" to="#similar-product" data-slide="next">
+                                <i className="fa fa-angle-right"></i>
+                              </Link>
                         </div>
 
                     </div>
-                    <div class="col-sm-7">
-                        <div class="product-information"><!--/product-information-->
-                            <img src="images/product-details/new.jpg" class="newarrival" alt="" />
+                    <div className="col-sm-7">
+                        <div className="product-information">
+                            <img src="images/product-details/new.jpg" className="newarrival" alt="" />
                             <h2>Anne Klein Sleeveless Colorblock Scuba</h2>
                             <p>Web ID: 1089772</p>
                             <img src="images/product-details/rating.png" alt="" />
@@ -312,188 +310,188 @@ export default function ProductDetail() {
                                 <span>US $59</span>
                                 <label>Quantity:</label>
                                 <input type="text" value="3" />
-                                <button type="button" class="btn btn-fefault cart">
-                                    <i class="fa fa-shopping-cart"></i>
+                                <button type="button" className="btn btn-fefault cart">
+                                    <i className="fa fa-shopping-cart"></i>
                                     Add to cart
                                 </button>
                             </span>
                             <p><b>Availability:</b> In Stock</p>
                             <p><b>Condition:</b> New</p>
                             <p><b>Brand:</b> E-SHOPPER</p>
-                            <a href=""><img src="images/product-details/share.png" class="share img-responsive"  alt="" /></a>
-                        </div><!--/product-information-->
+                            <Link to=""><img src="images/product-details/share.png" className="share img-responsive"  alt="" /></Link>
+                        </div>
                     </div>
-                </div><!--/product-details-->
+                </div>
                 
-                <div class="category-tab shop-details-tab"><!--category-tab-->
-                    <div class="col-sm-12">
-                        <ul class="nav nav-tabs">
-                            <li><a href="#details" data-toggle="tab">Details</a></li>
-                            <li><a href="#companyprofile" data-toggle="tab">Company Profile</a></li>
-                            <li><a href="#tag" data-toggle="tab">Tag</a></li>
-                            <li class="active"><a href="#reviews" data-toggle="tab">Reviews (5)</a></li>
+                <div className="category-tab shop-details-tab">
+                    <div className="col-sm-12">
+                        <ul className="nav nav-tabs">
+                            <li><Link to="#details" data-toggle="tab">Details</Link></li>
+                            <li><Link to="#companyprofile" data-toggle="tab">Company Profile</Link></li>
+                            <li><Link to="#tag" data-toggle="tab">Tag</Link></li>
+                            <li className="active"><Link to="#reviews" data-toggle="tab">Reviews (5)</Link></li>
                         </ul>
                     </div>
-                    <div class="tab-content">
-                        <div class="tab-pane fade" id="details" >
-                            <div class="col-sm-3">
-                                <div class="product-image-wrapper">
-                                    <div class="single-products">
-                                        <div class="productinfo text-center">
+                    <div className="tab-content">
+                        <div className="tab-pane fade" id="details" >
+                            <div className="col-sm-3">
+                                <div className="product-image-wrapper">
+                                    <div className="single-products">
+                                        <div className="productinfo text-center">
                                             <img src="images/home/gallery1.jpg" alt="" />
                                             <h2>$56</h2>
                                             <p>Easy Polo Black Edition</p>
-                                            <button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
+                                            <button type="button" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>Add to cart</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-3">
-                                <div class="product-image-wrapper">
-                                    <div class="single-products">
-                                        <div class="productinfo text-center">
+                            <div className="col-sm-3">
+                                <div className="product-image-wrapper">
+                                    <div className="single-products">
+                                        <div className="productinfo text-center">
                                             <img src="images/home/gallery2.jpg" alt="" />
                                             <h2>$56</h2>
                                             <p>Easy Polo Black Edition</p>
-                                            <button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
+                                            <button type="button" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>Add to cart</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-3">
-                                <div class="product-image-wrapper">
-                                    <div class="single-products">
-                                        <div class="productinfo text-center">
+                            <div className="col-sm-3">
+                                <div className="product-image-wrapper">
+                                    <div className="single-products">
+                                        <div className="productinfo text-center">
                                             <img src="images/home/gallery3.jpg" alt="" />
                                             <h2>$56</h2>
                                             <p>Easy Polo Black Edition</p>
-                                            <button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
+                                            <button type="button" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>Add to cart</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-3">
-                                <div class="product-image-wrapper">
-                                    <div class="single-products">
-                                        <div class="productinfo text-center">
+                            <div className="col-sm-3">
+                                <div className="product-image-wrapper">
+                                    <div className="single-products">
+                                        <div className="productinfo text-center">
                                             <img src="images/home/gallery4.jpg" alt="" />
                                             <h2>$56</h2>
                                             <p>Easy Polo Black Edition</p>
-                                            <button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
+                                            <button type="button" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>Add to cart</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         
-                        <div class="tab-pane fade" id="companyprofile" >
-                            <div class="col-sm-3">
-                                <div class="product-image-wrapper">
-                                    <div class="single-products">
-                                        <div class="productinfo text-center">
+                        <div className="tab-pane fade" id="companyprofile" >
+                            <div className="col-sm-3">
+                                <div className="product-image-wrapper">
+                                    <div className="single-products">
+                                        <div className="productinfo text-center">
                                             <img src="images/home/gallery1.jpg" alt="" />
                                             <h2>$56</h2>
                                             <p>Easy Polo Black Edition</p>
-                                            <button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
+                                            <button type="button" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>Add to cart</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-3">
-                                <div class="product-image-wrapper">
-                                    <div class="single-products">
-                                        <div class="productinfo text-center">
+                            <div className="col-sm-3">
+                                <div className="product-image-wrapper">
+                                    <div className="single-products">
+                                        <div className="productinfo text-center">
                                             <img src="images/home/gallery3.jpg" alt="" />
                                             <h2>$56</h2>
                                             <p>Easy Polo Black Edition</p>
-                                            <button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
+                                            <button type="button" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>Add to cart</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-3">
-                                <div class="product-image-wrapper">
-                                    <div class="single-products">
-                                        <div class="productinfo text-center">
+                            <div className="col-sm-3">
+                                <div className="product-image-wrapper">
+                                    <div className="single-products">
+                                        <div className="productinfo text-center">
                                             <img src="images/home/gallery2.jpg" alt="" />
                                             <h2>$56</h2>
                                             <p>Easy Polo Black Edition</p>
-                                            <button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
+                                            <button type="button" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>Add to cart</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-3">
-                                <div class="product-image-wrapper">
-                                    <div class="single-products">
-                                        <div class="productinfo text-center">
+                            <div className="col-sm-3">
+                                <div className="product-image-wrapper">
+                                    <div className="single-products">
+                                        <div className="productinfo text-center">
                                             <img src="images/home/gallery4.jpg" alt="" />
                                             <h2>$56</h2>
                                             <p>Easy Polo Black Edition</p>
-                                            <button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
+                                            <button type="button" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>Add to cart</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         
-                        <div class="tab-pane fade" id="tag" >
-                            <div class="col-sm-3">
-                                <div class="product-image-wrapper">
-                                    <div class="single-products">
-                                        <div class="productinfo text-center">
+                        <div className="tab-pane fade" id="tag" >
+                            <div className="col-sm-3">
+                                <div className="product-image-wrapper">
+                                    <div className="single-products">
+                                        <div className="productinfo text-center">
                                             <img src="images/home/gallery1.jpg" alt="" />
                                             <h2>$56</h2>
                                             <p>Easy Polo Black Edition</p>
-                                            <button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
+                                            <button type="button" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>Add to cart</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-3">
-                                <div class="product-image-wrapper">
-                                    <div class="single-products">
-                                        <div class="productinfo text-center">
+                            <div className="col-sm-3">
+                                <div className="product-image-wrapper">
+                                    <div className="single-products">
+                                        <div className="productinfo text-center">
                                             <img src="images/home/gallery2.jpg" alt="" />
                                             <h2>$56</h2>
                                             <p>Easy Polo Black Edition</p>
-                                            <button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
+                                            <button type="button" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>Add to cart</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-3">
-                                <div class="product-image-wrapper">
-                                    <div class="single-products">
-                                        <div class="productinfo text-center">
+                            <div className="col-sm-3">
+                                <div className="product-image-wrapper">
+                                    <div className="single-products">
+                                        <div className="productinfo text-center">
                                             <img src="images/home/gallery3.jpg" alt="" />
                                             <h2>$56</h2>
                                             <p>Easy Polo Black Edition</p>
-                                            <button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
+                                            <button type="button" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>Add to cart</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-3">
-                                <div class="product-image-wrapper">
-                                    <div class="single-products">
-                                        <div class="productinfo text-center">
+                            <div className="col-sm-3">
+                                <div className="product-image-wrapper">
+                                    <div className="single-products">
+                                        <div className="productinfo text-center">
                                             <img src="images/home/gallery4.jpg" alt="" />
                                             <h2>$56</h2>
                                             <p>Easy Polo Black Edition</p>
-                                            <button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
+                                            <button type="button" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>Add to cart</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         
-                        <div class="tab-pane fade active in" id="reviews" >
-                            <div class="col-sm-12">
+                        <div className="tab-pane fade active in" id="reviews" >
+                            <div className="col-sm-12">
                                 <ul>
-                                    <li><a href=""><i class="fa fa-user"></i>EUGEN</a></li>
-                                    <li><a href=""><i class="fa fa-clock-o"></i>12:41 PM</a></li>
-                                    <li><a href=""><i class="fa fa-calendar-o"></i>31 DEC 2014</a></li>
+                                    <li><Link to=""><i className="fa fa-user"></i>EUGEN</Link></li>
+                                    <li><Link to=""><i className="fa fa-clock-o"></i>12:41 PM</Link></li>
+                                    <li><Link to=""><i className="fa fa-calendar-o"></i>31 DEC 2014</Link></li>
                                 </ul>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                                 <p><b>Write Your Review</b></p>
@@ -505,7 +503,7 @@ export default function ProductDetail() {
                                     </span>
                                     <textarea name="" ></textarea>
                                     <b>Rating: </b> <img src="images/product-details/rating.png" alt="" />
-                                    <button type="button" class="btn btn-default pull-right">
+                                    <button type="button" className="btn btn-default pull-right">
                                         Submit
                                     </button>
                                 </form>
@@ -513,177 +511,177 @@ export default function ProductDetail() {
                         </div>
                         
                     </div>
-                </div><!--/category-tab-->
+                </div>
                 
-                <div class="recommended_items"><!--recommended_items-->
-                    <h2 class="title text-center">recommended items</h2>
+                <div className="recommended_items">
+                    <h2 className="title text-center">recommended items</h2>
                     
-                    <div id="recommended-item-carousel" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="item active">	
-                                <div class="col-sm-4">
-                                    <div class="product-image-wrapper">
-                                        <div class="single-products">
-                                            <div class="productinfo text-center">
+                    <div id="recommended-item-carousel" className="carousel slide" data-ride="carousel">
+                        <div className="carousel-inner">
+                            <div className="item active">	
+                                <div className="col-sm-4">
+                                    <div className="product-image-wrapper">
+                                        <div className="single-products">
+                                            <div className="productinfo text-center">
                                                 <img src="images/home/recommend1.jpg" alt="" />
                                                 <h2>$56</h2>
                                                 <p>Easy Polo Black Edition</p>
-                                                <button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
+                                                <button type="button" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>Add to cart</button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-4">
-                                    <div class="product-image-wrapper">
-                                        <div class="single-products">
-                                            <div class="productinfo text-center">
+                                <div className="col-sm-4">
+                                    <div className="product-image-wrapper">
+                                        <div className="single-products">
+                                            <div className="productinfo text-center">
                                                 <img src="images/home/recommend2.jpg" alt="" />
                                                 <h2>$56</h2>
                                                 <p>Easy Polo Black Edition</p>
-                                                <button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
+                                                <button type="button" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>Add to cart</button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-4">
-                                    <div class="product-image-wrapper">
-                                        <div class="single-products">
-                                            <div class="productinfo text-center">
+                                <div className="col-sm-4">
+                                    <div className="product-image-wrapper">
+                                        <div className="single-products">
+                                            <div className="productinfo text-center">
                                                 <img src="images/home/recommend3.jpg" alt="" />
                                                 <h2>$56</h2>
                                                 <p>Easy Polo Black Edition</p>
-                                                <button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
+                                                <button type="button" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>Add to cart</button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="item">	
-                                <div class="col-sm-4">
-                                    <div class="product-image-wrapper">
-                                        <div class="single-products">
-                                            <div class="productinfo text-center">
+                            <div className="item">	
+                                <div className="col-sm-4">
+                                    <div className="product-image-wrapper">
+                                        <div className="single-products">
+                                            <div className="productinfo text-center">
                                                 <img src="images/home/recommend1.jpg" alt="" />
                                                 <h2>$56</h2>
                                                 <p>Easy Polo Black Edition</p>
-                                                <button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
+                                                <button type="button" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>Add to cart</button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-4">
-                                    <div class="product-image-wrapper">
-                                        <div class="single-products">
-                                            <div class="productinfo text-center">
+                                <div className="col-sm-4">
+                                    <div className="product-image-wrapper">
+                                        <div className="single-products">
+                                            <div className="productinfo text-center">
                                                 <img src="images/home/recommend2.jpg" alt="" />
                                                 <h2>$56</h2>
                                                 <p>Easy Polo Black Edition</p>
-                                                <button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
+                                                <button type="button" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>Add to cart</button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-4">
-                                    <div class="product-image-wrapper">
-                                        <div class="single-products">
-                                            <div class="productinfo text-center">
+                                <div className="col-sm-4">
+                                    <div className="product-image-wrapper">
+                                        <div className="single-products">
+                                            <div className="productinfo text-center">
                                                 <img src="images/home/recommend3.jpg" alt="" />
                                                 <h2>$56</h2>
                                                 <p>Easy Polo Black Edition</p>
-                                                <button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
+                                                <button type="button" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>Add to cart</button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                         <a class="left recommended-item-control" href="#recommended-item-carousel" data-slide="prev">
-                            <i class="fa fa-angle-left"></i>
-                          </a>
-                          <a class="right recommended-item-control" href="#recommended-item-carousel" data-slide="next">
-                            <i class="fa fa-angle-right"></i>
-                          </a>			
+                         <Link className="left recommended-item-control" to="#recommended-item-carousel" data-slide="prev">
+                            <i className="fa fa-angle-left"></i>
+                          </Link>
+                          <Link className="right recommended-item-control" to="#recommended-item-carousel" data-slide="next">
+                            <i className="fa fa-angle-right"></i>
+                          </Link>			
                     </div>
-                </div><!--/recommended_items-->
+                </div>
                 
             </div>
         </div>
     </div>
 </section>
 
-<footer id="footer"><!--Footer-->
-    <div class="footer-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-2">
-                    <div class="companyinfo">
+<footer id="footer">
+    <div className="footer-top">
+        <div className="container">
+            <div className="row">
+                <div className="col-sm-2">
+                    <div className="companyinfo">
                         <h2><span>e</span>-shopper</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor</p>
                     </div>
                 </div>
-                <div class="col-sm-7">
-                    <div class="col-sm-3">
-                        <div class="video-gallery text-center">
-                            <a href="#">
-                                <div class="iframe-img">
+                <div className="col-sm-7">
+                    <div className="col-sm-3">
+                        <div className="video-gallery text-center">
+                            <Link to="#">
+                                <div className="iframe-img">
                                     <img src="images/home/iframe1.png" alt="" />
                                 </div>
-                                <div class="overlay-icon">
-                                    <i class="fa fa-play-circle-o"></i>
+                                <div className="overlay-icon">
+                                    <i className="fa fa-play-circle-o"></i>
                                 </div>
-                            </a>
+                            </Link>
                             <p>Circle of Hands</p>
                             <h2>24 DEC 2014</h2>
                         </div>
                     </div>
                     
-                    <div class="col-sm-3">
-                        <div class="video-gallery text-center">
-                            <a href="#">
-                                <div class="iframe-img">
+                    <div className="col-sm-3">
+                        <div className="video-gallery text-center">
+                            <Link to="#">
+                                <div className="iframe-img">
                                     <img src="images/home/iframe2.png" alt="" />
                                 </div>
-                                <div class="overlay-icon">
-                                    <i class="fa fa-play-circle-o"></i>
+                                <div className="overlay-icon">
+                                    <i className="fa fa-play-circle-o"></i>
                                 </div>
-                            </a>
+                            </Link>
                             <p>Circle of Hands</p>
                             <h2>24 DEC 2014</h2>
                         </div>
                     </div>
                     
-                    <div class="col-sm-3">
-                        <div class="video-gallery text-center">
-                            <a href="#">
-                                <div class="iframe-img">
+                    <div className="col-sm-3">
+                        <div className="video-gallery text-center">
+                            <Link to="#">
+                                <div className="iframe-img">
                                     <img src="images/home/iframe3.png" alt="" />
                                 </div>
-                                <div class="overlay-icon">
-                                    <i class="fa fa-play-circle-o"></i>
+                                <div className="overlay-icon">
+                                    <i className="fa fa-play-circle-o"></i>
                                 </div>
-                            </a>
+                            </Link>
                             <p>Circle of Hands</p>
                             <h2>24 DEC 2014</h2>
                         </div>
                     </div>
                     
-                    <div class="col-sm-3">
-                        <div class="video-gallery text-center">
-                            <a href="#">
-                                <div class="iframe-img">
+                    <div className="col-sm-3">
+                        <div className="video-gallery text-center">
+                            <Link to="#">
+                                <div className="iframe-img">
                                     <img src="images/home/iframe4.png" alt="" />
                                 </div>
-                                <div class="overlay-icon">
-                                    <i class="fa fa-play-circle-o"></i>
+                                <div className="overlay-icon">
+                                    <i className="fa fa-play-circle-o"></i>
                                 </div>
-                            </a>
+                            </Link>
                             <p>Circle of Hands</p>
                             <h2>24 DEC 2014</h2>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-3">
-                    <div class="address">
+                <div className="col-sm-3">
+                    <div className="address">
                         <img src="images/home/map.png" alt="" />
                         <p>505 S Atlantic Ave Virginia Beach, VA(Virginia)</p>
                     </div>
@@ -692,63 +690,63 @@ export default function ProductDetail() {
         </div>
     </div>
     
-    <div class="footer-widget">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-2">
-                    <div class="single-widget">
+    <div className="footer-widget">
+        <div className="container">
+            <div className="row">
+                <div className="col-sm-2">
+                    <div className="single-widget">
                         <h2>Service</h2>
-                        <ul class="nav nav-pills nav-stacked">
-                            <li><a href="">Online Help</a></li>
-                            <li><a href="">Contact Us</a></li>
-                            <li><a href="">Order Status</a></li>
-                            <li><a href="">Change Location</a></li>
-                            <li><a href="">FAQ’s</a></li>
+                        <ul className="nav nav-pills nav-stacked">
+                            <li><Link to="">Online Help</Link></li>
+                            <li><Link to="">Contact Us</Link></li>
+                            <li><Link to="">Order Status</Link></li>
+                            <li><Link to="">Change Location</Link></li>
+                            <li><Link to="">FAQ’s</Link></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-2">
-                    <div class="single-widget">
+                <div className="col-sm-2">
+                    <div className="single-widget">
                         <h2>Quock Shop</h2>
-                        <ul class="nav nav-pills nav-stacked">
-                            <li><a href="">T-Shirt</a></li>
-                            <li><a href="">Mens</a></li>
-                            <li><a href="">Womens</a></li>
-                            <li><a href="">Gift Cards</a></li>
-                            <li><a href="">Shoes</a></li>
+                        <ul className="nav nav-pills nav-stacked">
+                            <li><Link to="">T-Shirt</Link></li>
+                            <li><Link to="">Mens</Link></li>
+                            <li><Link to="">Womens</Link></li>
+                            <li><Link to="">Gift Cards</Link></li>
+                            <li><Link to="">Shoes</Link></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-2">
-                    <div class="single-widget">
+                <div className="col-sm-2">
+                    <div className="single-widget">
                         <h2>Policies</h2>
-                        <ul class="nav nav-pills nav-stacked">
-                            <li><a href="">Terms of Use</a></li>
-                            <li><a href="">Privecy Policy</a></li>
-                            <li><a href="">Refund Policy</a></li>
-                            <li><a href="">Billing System</a></li>
-                            <li><a href="">Ticket System</a></li>
+                        <ul className="nav nav-pills nav-stacked">
+                            <li><Link to="">Terms of Use</Link></li>
+                            <li><Link to="">Privecy Policy</Link></li>
+                            <li><Link to="">Refund Policy</Link></li>
+                            <li><Link to="">Billing System</Link></li>
+                            <li><Link to="">Ticket System</Link></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-2">
-                    <div class="single-widget">
+                <div className="col-sm-2">
+                    <div className="single-widget">
                         <h2>About Shopper</h2>
-                        <ul class="nav nav-pills nav-stacked">
-                            <li><a href="">Company Information</a></li>
-                            <li><a href="">Careers</a></li>
-                            <li><a href="">Store Location</a></li>
-                            <li><a href="">Affillate Program</a></li>
-                            <li><a href="">Copyright</a></li>
+                        <ul className="nav nav-pills nav-stacked">
+                            <li><Link to="">Company Information</Link></li>
+                            <li><Link to="">Careers</Link></li>
+                            <li><Link to="">Store Location</Link></li>
+                            <li><Link to="">Affillate Program</Link></li>
+                            <li><Link to="">Copyright</Link></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-3 col-sm-offset-1">
-                    <div class="single-widget">
+                <div className="col-sm-3 col-sm-offset-1">
+                    <div className="single-widget">
                         <h2>About Shopper</h2>
-                        <form action="#" class="searchform">
+                        <form action="#" className="searchform">
                             <input type="text" placeholder="Your email address" />
-                            <button type="submit" class="btn btn-default"><i class="fa fa-arrow-circle-o-right"></i></button>
+                            <button type="submit" className="btn btn-default"><i className="fa fa-arrow-circle-o-right"></i></button>
                             <p>Get the most recent updates from <br />our site and be updated your self...</p>
                         </form>
                     </div>
@@ -758,16 +756,16 @@ export default function ProductDetail() {
         </div>
     </div>
     
-    <div class="footer-bottom">
-        <div class="container">
-            <div class="row">
-                <p class="pull-left">Copyright © 2013 E-SHOPPER Inc. All rights reserved.</p>
-                <p class="pull-right">Designed by <span><a target="_blank" href="http://www.themeum.com">Themeum</a></span></p>
+    <div className="footer-bottom">
+        <div className="container">
+            <div className="row">
+                <p className="pull-left">Copyright © 2013 E-SHOPPER Inc. All rights reserved.</p>
+                <p className="pull-right">Designed by <span><Link target="_blank" to="http://www.themeum.com">Themeum</Link></span></p>
             </div>
         </div>
     </div>
     
-</footer><!--/Footer-->
+</footer>
 
 
 
