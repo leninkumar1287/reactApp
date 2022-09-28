@@ -35,7 +35,7 @@ export default function Navigation() {
                         <div className="row">
                             <div className="col-sm-4">
                                 <div className="logo pull-left">
-                                    <Link to="index.html"><img src="images/home/logo.png" alt="" /></Link>
+                                    <Link to="/shop"><img src="images/home/logo.png" alt="" /></Link>
                                 </div>
                                 <div className="btn-group pull-right">
                                     <div className="btn-group">
@@ -44,6 +44,7 @@ export default function Navigation() {
                                             <span className="caret"></span>
                                         </button>
                                         <ul className="dropdown-menu">
+                                            
                                             <li><Link to="">Canada</Link></li>
                                             <li><Link to="">UK</Link></li>
                                         </ul>
@@ -106,7 +107,7 @@ export default function Navigation() {
                                                 <li><Link to="/blogsingle">Blog Single</Link></li>
                                             </ul>
                                         </li>
-                                        <li><Link to="404.html">404</Link></li>
+                                        <li><Link to="/notfound">404</Link></li>
                                         <li><Link to="/contactUs">Contact</Link></li>
                                     </ul>
                                 </div>

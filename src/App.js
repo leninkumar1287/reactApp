@@ -10,6 +10,7 @@ import ProductDetail from './components/ProductDetails';
 import Blog from './components/Blog';
 import Checkout from './components/Checkout';
 import ContactUs from './components/ContactUs';
+import NotFound from './components/404'
 
 function App() {
   return (
@@ -27,6 +28,8 @@ function App() {
             <Route path = '/blogsingle'         exact     element = {<BlogSingle />} />
             <Route path = '/'                   exact     element = {<Login />} />
             <Route path = '/contactUs'          exact     element = {<ContactUs />} />
+            <Route path = '/notfound'          exact     element = {<NotFound />} />
+
 
           </Routes>
         </section>
