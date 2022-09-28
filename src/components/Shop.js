@@ -1,126 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Navigation from './Navigation'
 export default function Shop() {
   return (
     <div>
-      <header id="header">
-        <div className="header_top">
-          <div className="container">
-            <div className="row">
-              <div className="col-sm-6 ">
-                <div className="contactinfo">
-                  <ul className="nav nav-pills">
-                    <li><Link to=""><i className="fa fa-phone"></i> +2 95 01 88 821</Link></li>
-                    <li><Link to=""><i className="fa fa-envelope"></i> info@domain.com</Link></li>
-                  </ul>
-                </div>
-              </div>
-              <div className="col-sm-6">
-                <div className="social-icons pull-right">
-                  <ul className="nav navbar-nav">
-                    <li><Link to=""><i className="fa fa-facebook"></i></Link></li>
-                    <li><Link to=""><i className="fa fa-twitter"></i></Link></li>
-                    <li><Link to=""><i className="fa fa-linkedin"></i></Link></li>
-                    <li><Link to=""><i className="fa fa-dribbble"></i></Link></li>
-                    <li><Link to=""><i className="fa fa-google-plus"></i></Link></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="header-middle">
-          <div className="container">
-            <div className="row">
-              <div className="col-sm-4">
-                <div className="logo pull-left">
-                  <Link to="index.html"><img src="images/home/logo.png" alt="" /></Link>
-                </div>
-                <div className="btn-group pull-right">
-                  <div className="btn-group">
-                    <button type="button" className="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
-                      USA
-                      <span className="caret"></span>
-                    </button>
-                    <ul className="dropdown-menu">
-                      <li><Link to="">Canada</Link></li>
-                      <li><Link to="">UK</Link></li>
-                    </ul>
-                  </div>
-
-                  <div className="btn-group">
-                    <button type="button" className="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
-                      DOLLAR
-                      <span className="caret"></span>
-                    </button>
-                    <ul className="dropdown-menu">
-                      <li><Link to="">Canadian Dollar</Link></li>
-                      <li><Link to="">Pound</Link></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div className="col-sm-8">
-                <div className="shop-menu pull-right">
-                  <ul className="nav navbar-nav">
-                    <li><Link to=""><i className="fa fa-user"></i> Account</Link></li>
-                    <li><Link to=""><i className="fa fa-star"></i> Wishlist</Link></li>
-                    <li><Link to="./Checkout.js"><i className="fa fa-crosshairs"></i> Checkout</Link></li>
-                    <li><Link to="./Cart.js"><i className="fa fa-shopping-cart"></i> Cart</Link></li>
-                    <li><Link to="./Login.js"><i className="fa fa-lock"></i> Login</Link></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="header-bottom">
-          <div className="container">
-            <div className="row">
-              <div className="col-sm-9">
-                <div className="navbar-header">
-                  <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span className="sr-only">Toggle navigation</span>
-                    <span className="icon-bar"></span>
-                    <span className="icon-bar"></span>
-                    <span className="icon-bar"></span>
-                  </button>
-                </div>
-                <div className="mainmenu pull-left">
-                  <ul className="nav navbar-nav collapse navbar-collapse">
-                    <li><Link to="index.html">Home</Link></li>
-                    <li className="dropdown"><Link to="#" className="active">Shop<i className="fa fa-angle-down"></i></Link>
-                      <ul role="menu" className="sub-menu">
-                        <li><Link to="./Shop.js" className="active">Products</Link></li>
-                        <li><Link to="./ProductDetails.js">Product Details</Link></li>
-                        <li><Link to="./Checkout.js">Checkout</Link></li>
-                        <li><Link to="./Cart.js">Cart</Link></li>
-                        <li><Link to="./Login.js">Login</Link></li>
-                      </ul>
-                    </li>
-                    <li className="dropdown"><Link to="#">Blog<i className="fa fa-angle-down"></i></Link>
-                      <ul role="menu" className="sub-menu">
-                        <li><Link to="./Blog.js">Blog List</Link></li>
-                        <li><Link to="./Blog-single.js">Blog Single</Link></li>
-                      </ul>
-                    </li>
-                    <li><Link to="404.js">404</Link></li>
-                    <li><Link to="./ContactUs.js">Contact</Link></li>
-                  </ul>
-                </div>
-              </div>
-              <div className="col-sm-3">
-                <div className="search_box pull-right">
-                  <input type="text" placeholder="Search" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-
+      <Navigation />
       <section id="advertisement">
         <div className="container">
           <img src="images/shop/advertisement.jpg" alt="" />
@@ -259,7 +143,7 @@ export default function Shop() {
                   <h2>Price Range</h2>
                   <div className="well">
                     <input type="text" className="span2" value="" data-slider-min="0" data-slider-max="600" data-slider-step="5" data-slider-value="[250,450]" id="sl2" /><br />
-                      <b>$ 0</b> <b className="pull-right">$ 600</b>
+                    <b>$ 0</b> <b className="pull-right">$ 600</b>
                   </div>
                 </div>
 
