@@ -461,6 +461,7 @@ export default function ProductDetail() {
                                                             <img src="images/home/recommend2.jpg" alt="" />
                                                             <h2>$56</h2>
                                                             <p>Easy Polo Black Edition</p>
+                                                            <leninkumar>lrninkumar </leninkumar>
                                                             <button type="button" className="btn btn-default add-to-cart"><i className="fa fa-shopping-cart"></i>Add to cart</button>
                                                         </div>
                                                     </div>

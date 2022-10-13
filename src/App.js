@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import './App.css';
-// import Navigation from './components/Navigation';
 import Shop from './components/Shop';
 import Login from './components/Login';
 import Cart from './components/Cart'
@@ -26,7 +25,7 @@ function App() {
             <Route path = '/production details' exact     element = {<ProductDetail />} />
             <Route path = '/blog'               exact     element = {<Blog />} />
             <Route path = '/blogsingle'         exact     element = {<BlogSingle />} />
-            <Route path = '/'                   exact     element = {<Login />} />
+            <Route path = '/'                   exact     element = {<Shop />} />
             <Route path = '/contactUs'          exact     element = {<ContactUs />} />
             <Route path = '/notfound'          exact     element = {<NotFound />} />
 
